@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Run Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #2b3033;
+            background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(/assests/marioBG.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+        }
+        img{
+            width: 200px;
+            position:absolute;
+            bottom: 17%;
+            animation: mariorun 3s linear infinite;
+            /* animation-iteration-count: 3; */
+        }
+        @keyframes mariorun {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(calc(100vw - 200px));
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <img src="/assests/mario-run.gif" alt="mario_running">
+</body>
+</html>
